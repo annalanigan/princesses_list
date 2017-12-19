@@ -15,14 +15,14 @@ public class PrincessActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Princess princess = (Princess) intent.getSerializableExtra("princess");
 
-        TextView name = findViewById(R.id.princess);
-        name.setText(princess.getName());
-
-        TextView movie = findViewById(R.id.movie);
-        movie.setText(princess.getMovie());
-
-        TextView ranking = findViewById(R.id.data);
-        ranking.setText(princess.getData().toString());
+//        TextView name = findViewById(R.id.princess);
+//        name.setText(princess.getName());
+//
+//        TextView movie = findViewById(R.id.movie);
+//        movie.setText(princess.getMovie());
+//
+//        TextView ranking = findViewById(R.id.data);
+//        ranking.setText(princess.getData().toString());
 
     }
 }
