@@ -12,17 +12,18 @@ public class PrincessActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_princess);
 
+        TextView name = findViewById(R.id.name);
+        TextView movie = findViewById(R.id.movie);
+        TextView data = findViewById(R.id.data);
+
         Intent intent = getIntent();
+//        Bundle extras = intent.getExtras();
+
         Princess princess = (Princess) intent.getSerializableExtra("princess");
 
-//        TextView name = findViewById(R.id.princess);
-//        name.setText(princess.getName());
-//
-//        TextView movie = findViewById(R.id.movie);
-//        movie.setText(princess.getMovie());
-//
-//        TextView ranking = findViewById(R.id.data);
-//        ranking.setText(princess.getData().toString());
+        name.setText(princess.getName());
+        movie.setText(princess.getMovie());
+        data.setText(princess.getData());
 
     }
 }

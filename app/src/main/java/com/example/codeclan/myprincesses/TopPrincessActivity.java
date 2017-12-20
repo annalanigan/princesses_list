@@ -25,6 +25,7 @@ public class TopPrincessActivity extends AppCompatActivity {
     }
 
     public void getPrincess(View listItem){
+
         Princess princess = (Princess) listItem.getTag();
 
         Intent intent = new Intent(this, PrincessActivity.class);
